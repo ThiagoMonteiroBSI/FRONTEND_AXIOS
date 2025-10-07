@@ -2,11 +2,11 @@
 import axios from 'axios';
 import { ref } from 'vue';
 
-const produtos = ref([])
+const produtos = ref([]);
 
 async function buscarProdutos() {
-   const response = await axios.get('/produtos')
-   produtos.value = response.data
+  const response = await axios.get('/produtos');
+  produtos.value = response.data;
 }
 
 </script>
